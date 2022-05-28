@@ -15,7 +15,7 @@
 <body>
 
     <!------NAVBAR------>
-    
+
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         
         <div class="container-fluid">
@@ -53,6 +53,8 @@
                   <li><a class="dropdown-item" href="https://www.amazon.com/-/es/Los-m%C3%A1s-vendidos-Procesadores-CPU/zgbs/pc/229189" target="_blank"> Procesadores </a></li>
                   <li><a class="dropdown-item" href="https://www.amazon.com/-/es/Los-m%C3%A1s-vendidos-Tarjetas-Gr%C3%A1ficas-para-Computadoras/zgbs/pc/284822" target="_blank"> Tarjetas gráficas </a></li>
                   <li><a class="dropdown-item" href="https://www.amazon.com/-/es/Los-m%C3%A1s-vendidos-Memoria-de-Computadoras/zgbs/pc/172500" target="_blank"> Memorias RAM </a></li>
+                  <li><a class="dropdown-item" href="https://www.amazon.com/Best-Sellers-Computer-Motherboards/zgbs/pc/1048424" target="_blank"> Fuentes de poder </a></li>
+                  <li><a class="dropdown-item" href="https://www.amazon.com/Best-Sellers-Computer-Power-Supplies/zgbs/pc/1161760" target="_blank"> Tarjetas madre </a></li>
                   <li><hr class="dropdown-divider"></li>
                   <li><a class="dropdown-item" href="https://www.amazon.com/Best-Sellers-Desktop-Computers/zgbs/electronics/565098" target="_blank"> Equipos prearmados </a></li>
                 
@@ -78,7 +80,7 @@
       <!------BACKGROUND IMAGE AND MASK------>
 
       <div class="p-5 text-center bg-image" style="background-image: url('https://s2.best-wallpaper.net/wallpaper/2880x1800/2006/Palm-trees-silhouette-clouds-dusk_2880x1800.jpg'); 
-      height: 100vh;"> <!--"100vh" means the image will cover as much space as it can-->
+      height: 130vh;"> <!--"100vh" means the image will cover as much space as it can-->
         
         <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
           
@@ -98,46 +100,151 @@
         
         </div>
 
-        <!------YOUTUBE VIDEO------>
+        <!------CAROUSEL------>
 
-        <!--
-        <div class= "flex-container"> <h1> ¿No sabes que componentes llevar? ¡Informate! </h1> 
+        <div class="row justify-content-center"> <!--Everything inside this row is justified to the center-->
 
-        <div class="h-100 d-flex justify-content-center align-items-center">
-
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/T7ww7nhSpuU" title="YouTube video player" 
-          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
-
-        </div> -->
-      
-      </div>
-
-    <!--
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="https://i.redd.it/0hmkp5l3syl61.jpg" height = 50%  width = 50% class="d-block w-100" alt="First Image">
+          <div class= "container-text2">          <!--Everything inside this will be in the container with the class properties-->
+         
+            <div class="row justify-content-center"> <!--Everything inside the last container will be centered because of this-->
+  
+              <div class="col-md-10"> <!--This is not really necesary but with a centered column and row the elements will be better centered-->
+                
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+              
+                  <div class="carousel-indicators">
+                  
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  
+                  </div>
+                  
+                  <div class="carousel-inner">
+                  
+                    <div class="carousel-item active">
+                  
+                      <img src="https://hiraoka.com.pe/media/mageplaza/blog/post/a/m/amd-ryzen-intel-core-cual-es-el-mejor-procesador.jpg" width = 640 height = 360 alt="First image">
+                      
+                      <div class="carousel-caption d-none d-md-block">
+                  
+                        <h5> PROCESADORES </h5>
+                        <p> ¡Consigue los últimos y mejores procesadores de Intel y Ryzen!</p>
+                  
+                      </div>
+                  
+                    </div>
+                  
+                    <div class="carousel-item">
+                  
+                      <img src="https://wallpaperaccess.com/full/2325987.jpg" width = 640 height = 360  alt="Second image">
+                      
+                      <div class="carousel-caption d-none d-md-block">
+                  
+                        <h5> TARJETAS GRÁFICAS </h5>
+                        <p> ¡Sólo aquí las últimas GPUs sin sobreprecio! </p>
+                  
+                      </div>
+                  
+                    </div>
+                   
+                    <div class="carousel-item">
+                   
+                      <img src="https://i.ytimg.com/vi/DdFSJv66-XU/maxresdefault.jpg" width = 640 height = 360 alt="Third image">
+                      
+                      <div class="carousel-caption d-none d-md-block">
+                   
+                        <h5> MEMORIAS RAM </h5>
+                        <p> ¡Las últimas DDR4 con mayor capacidad! </p>
+                   
+                      </div>
+                   
+                    </div>
+                  
+                  </div>
+                  
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  
+                  </button>
+                  
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  
+                  </button>
+                
+                </div>
+  
+              </div>
+  
+            </div>
+  
           </div>
-          <div class="carousel-item">
-            <img src="https://rebelcry.com/img/2021/03/26/1616758979-teclado-mecanico-story-superhighlight-1920x1080.jpg" height = 50%  width = 50% class="d-block w-100" alt="Second Image">
-          </div>
-          <div class="carousel-item">
-            <img src="https://thegadgetflow.com/wp-content/uploads/2021/10/Razer-Kraken-V3-HyperSense-gaming-headset-02.jpg" height = 50%  width = 50% class="d-block w-100" alt="Third Image">
-          </div>
+
         </div>
         
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
 
-      </div> -->
+        <!------TEXT FOR YOUTUBE VIDEO------>
+
+        <div class="row justify-content-center">
+          
+          <div class="container-text">
+            
+            <div class="row align-items-center justify-content-center">
+              
+              <div class="col">
+              
+                <h2> ¿No sabes que componentes llevar? ¡Informate! </h2> 
+              
+              </div>
+              
+              <div class="col">
+              
+                <h2> ¿No sabes si tus piezas son compatibles? ¡Informate! </h2> 
+              
+              </div>
+            
+            </div>
+          
+          </div>
+
+        </div>
+
+        <div class="row justify-content-center">
+          
+          <div class="container-text">
+            
+            <div class="row align-items-center justify-content-center">
+              
+              <div class="col">
+              
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/T7ww7nhSpuU" title="YouTube video player" 
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+              
+              </div>
+              
+              <div class="col">
+                ← Vídeos informativos →
+              </div>
+
+              <div class="col">
+              
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/RsVIknhiJ_g" title="YouTube video player" 
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+              
+              </div>
+            
+            </div>
+          
+          </div>
+
+        </div>
+      
+      </div>
 
       <!------FOOTER------>
 
@@ -146,6 +253,7 @@
         <div class="container p-4 pb-0">
         
           <section class="">
+            
             <form action="">
         
               <div class="row d-flex justify-content-center">
@@ -190,8 +298,6 @@
         </div>
 
       </footer>
-
-      
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"> </script>
 

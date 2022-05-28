@@ -1,7 +1,26 @@
-.flex-container
+.col /* Text color (video labeling) */
+{
+    color: #FFFFFF;
+    text-shadow: 4px 3px 0px #7A7A7A;
+    color: #FFFFFF;
+    
+}
+
+.container-text /* videos container */
 {
     display: flex;
+    width: 1700px;
+    height: 230px;
+    justify-content: space-around;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container-text2 /* Slider container */
+{
+    width: 900px;
+    height: 430px;
     justify-content: center;
-    
-    padding: 10px;
+    padding: 55px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 4px 3px 0px #202020;
 }
